@@ -9,7 +9,7 @@
 	box-shadow: 20px -20px 60px #0252d9, -20px 20px 60px #0270ff;
 }
 
-.display {
+.display-container {
 	position: relative;
 	top: 30px;
 	left: 45px;
@@ -20,7 +20,7 @@
 	box-shadow: inset 20px -20px 60px #849c79, inset -20px 20px 60px #b2d4a3;
 }
 
-.display p {
+.display-container p {
 	position: relative;
 	top: 25px;
 	left: 3px;
