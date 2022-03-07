@@ -25,7 +25,7 @@ body {
 	font-size: 2rem;
 	background: rgba(42, 109, 218, 0.75);
 	box-shadow: inset 20px -20px 60px #2b63c0, inset -20px 20px 60px #3a87ff;
-	color: gray;
+	color: white;
 	transition: all 0.3s ease-in-out;
 }
 
