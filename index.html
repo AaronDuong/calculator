@@ -6,35 +6,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>The Calculator</title>
 		<link rel="stylesheet" href="styles.css" />
-		<script src="main.js" defer></script>
+		<script src="script.js" defer></script>
 	</head>
 	<body>
-		<div class="container">
+		<div class="container-grid">
 			<div class="display-container">
-				<p id="display"></p>
+				<div class="previous-operand" data-previous-display></div>
+				<div class="current-operand" data-current-display></div>
 			</div>
-			<div class="clear-and-backspace">
-				<button id="clearButton">CLEAR</button>
-				<button id="backspace">BACKSPACE</button>
-			</div>
-			<div class="btn-container">
-				<button class="buttons" data-key="7">7</button>
-				<button class="buttons" data-key="8">8</button>
-				<button class="buttons" data-key="9">9</button>
-				<button class="buttons operators" data-key="/">/</button>
-				<button class="buttons" data-key="4">4</button>
-				<button class="buttons" data-key="5">5</button>
-				<button class="buttons" dat="6">6</button>
-				<button class="buttons operators" data-key="*">*</button>
-				<button class="buttons" data-key="1">1</button>
-				<button class="buttons" data-key="2">2</button>
-				<button class="buttons" data-key="3">3</button>
-				<button class="buttons operators" data-key="-">-</button>
-				<button class="buttons" data-key="0">0</button>
-				<button class="buttons" data-key=".">.</button>
-				<button class="buttons operators" data-key="=">=</button>
-				<button class="buttons operators" data-key="+">+</button>
-			</div>
+			<button class="span-two" data-clear>CLEAR</button>
+			<button class="span-two" data-delete>DELETE</button>
+			<button class="buttons" data-key>7</button>
+			<button class="buttons" data-key>8</button>
+			<button class="buttons" data-key>9</button>
+			<button class="buttons" data-operation="/">/</button>
+			<button class="buttons" data-key>4</button>
+			<button class="buttons" data-key>5</button>
+			<button class="buttons" data-key>6</button>
+			<button class="buttons" data-operation>*</button>
+			<button class="buttons" data-key>1</button>
+			<button class="buttons" data-key>2</button>
+			<button class="buttons" data-key>3</button>
+			<button class="buttons" data-operation>-</button>
+			<button class="buttons" data-key>0</button>
+			<button class="buttons" data-key>.</button>
+			<button class="buttons" data-equals>=</button>
+			<button class="buttons" data-operation>+</button>
 		</div>
 	</body>
 </html>

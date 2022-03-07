@@ -18,14 +18,11 @@ function operate() {
 		operator.push(this.innerText);
 		values.push(currentValue);
 		display.innerText = "";
+		console.log(values.length, operator.length);
 		if (values.length === 2 && operator.pop() === "=") {
 			let value1 = values.shift();
 			let value2 = values.pop();
-			console.log(operator);
 			runningTotal = doMath(value1, value2, operator.pop());
-			// if (this.innerText === "+") {
-			// 	runningTotal += add(value1, value2);
-			// }
 			display.innerText = runningTotal;
 			values.push(runningTotal);
 		}
