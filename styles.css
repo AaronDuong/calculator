@@ -14,7 +14,7 @@ body {
 	display: grid;
 	justify-content: center;
 	align-content: center;
-	min-height: 100vh;
+	min-height: calc(100vh - 50px);
 	grid-template-columns: repeat(4, 100px);
 	grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 	box-shadow: 0px 0px 43px 17px rgba(153, 153, 153, 1);
@@ -52,12 +52,18 @@ body {
 	word-break: break-all;
 }
 
-.display-container .previous-operand {
+.display-container .previous-display {
 	color: rgba(18, 18, 19, 0.5);
 	font-size: 1.5rem;
 }
 
-.display-container .current-operand {
+.display-container .current-display {
 	color: black;
 	font-size: 2.5rem;
+}
+
+footer {
+	height: 50px;
+	text-align: center;
+	background: linear-gradient(to right, rgb(36, 42, 102), lightblue);
 }

@@ -1,12 +1,10 @@
-const numButtons = Array.from(document.querySelectorAll("[data-key]"));
-const operationButtons = Array.from(
-	document.querySelectorAll("[data-operation]")
-);
-const equalsButton = document.querySelector("[data-equals]");
-const deleteButton = document.querySelector("[data-delete]");
-const allClearButton = document.querySelector("[data-clear]");
-const previousDisplay = document.querySelector("[data-previous-display]");
-const currentDisplay = document.querySelector("[data-current-display");
+const numButtons = Array.from(document.querySelectorAll(".btn-numbers"));
+const operationButtons = Array.from(document.querySelectorAll(".operators"));
+const equalsButton = document.querySelector(".equals");
+const deleteButton = document.querySelector(".delete");
+const allClearButton = document.querySelector(".clear");
+const previousDisplay = document.querySelector(".previous-display");
+const currentDisplay = document.querySelector(".current-display");
 let currentOperand = "";
 let previousOperand = "";
 let operation;
